@@ -22,8 +22,9 @@
     Nama Barang         : <input type ="text" name="nama_barang" size="50"> <br>
     Kategori            : <select name="kategori">
         @foreach($kategoris as $kategori)
-            <option value="{{$kategori->id}}">{{$kategori->nama_kategori}}</option></select><br>
+            <option value="{{$kategori->id}}">{{$kategori->nama_kategori}}
         @endforeach
+    </option></select><br>
     alamat              : <input type ="text" name="alamat" size="50"> <br>
     posisi_barang       : <input type ="text" name="posisi_barang" size="50"> <br>
     Tanggal Pengiriman  : <input type ="date" name="tanggal_pengiriman" size="50"> <br>

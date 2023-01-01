@@ -42,7 +42,7 @@
                 @foreach($data_paket as $paket)
                   <tr>
                     <th scope="row">{{$paket->id}}</th>
-                    <td>{{$paket->nama_pengirim}}</td>
+                    <td>{{$paket->id_user}}</td>
                     <td>{{$paket->nama_penerima}}</td>
                     <td>{{$paket->nama_barang}}</td>
                     <td>{{$paket->alamat}}</td>

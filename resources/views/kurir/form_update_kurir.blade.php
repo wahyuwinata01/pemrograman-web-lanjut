@@ -15,6 +15,7 @@
     @csrf
     @method("put")
 
+    
     Nama        : <input type ="text" name="nama"> <br>
     NIK         : <input type ="text" name="nik"> <br>
     Alamat      : <input type ="text area" name="alamat" size="50"> <br>

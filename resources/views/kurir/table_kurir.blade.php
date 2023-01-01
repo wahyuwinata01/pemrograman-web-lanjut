@@ -44,7 +44,7 @@ use App\Http\Controllers\KurirController;
                 @foreach($data_kurir as $kurir)
                   <tr>
                     <th scope="row">{{$kurir->id}}</th>
-                    <td>{{$kurir->user->nama}}</td>
+                    <td>{{$kurir->nama_kurir}}</td>
                     {{-- <td>{{$kurir->nik}}</td> --}}
                     <td>{{$kurir->alamat}}</td>
                     <td>{{$kurir->jenis_kelamin}}</td>

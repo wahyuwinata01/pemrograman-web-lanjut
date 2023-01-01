@@ -26,7 +26,7 @@ Route::get('/', function () {
 //menu
 Route::get('/kosong',[controllerku::class,"blank"])->name("blank1");
 Route::get('/apa',[controllerku::class,"empty"])->name("emptypok");
-Route::get('/home',[controllerku::class,"menu"])->name("menu");
+
 Route::get('/table',[UserController::class,"table"])->name("table-saya");
 Route::get('/form',[UserController::class,"form"])->name("form-saya");
 Route::get("/login", [SecurityController::class, "formLogin"])->name("login");
@@ -69,14 +69,15 @@ Route::put('/update_tracking/{id}',[TrackingController::class,"update_tracking"]
 Route::delete('/delete_tracking/{id}',[TrackingController::class,"hapus_tracking"])->name("delete_tracking");
 Route::get('/tampil_tracking/{id}',[TrackingController::class,"show_tracking"])->name("tracking_show");
 
-// Route::middleware("auth")->group(function() {
+Route::middleware("auth")->group(function() {
     Route::get('/tampil',[UserController::class,"tampil"])->name("menu-saya");
     Route::post('/simpan',[UserController::class,"simpan_user"])->name("simpan-saya");
     Route::get('/edit_user/{id}',[UserController::class,"form_edit"])->name("form_edit");
     Route::put('/update_user/{id}',[UserController::class,"user_update"])->name("edit");
     Route::delete('/delete_user/{id}',[UserController::class,"hapus"])->name("delete");
     Route::get('/tampil_user/{id}',[UserController::class,"show"])->name("user_show");
-//    });
+    Route::get('/home',[controllerku::class,"menu"])->name("menu");
+   });
    
 
 

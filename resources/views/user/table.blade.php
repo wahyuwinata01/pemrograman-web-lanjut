@@ -2,6 +2,7 @@
 // use App\Http\Controllers\controllerku;
 use App\Http\Controllers\UserController;
 ?>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
 <link rel="stylesheet" href="Admin/lte/plugins/fontawesome-free/css/all.min.css">
@@ -26,6 +27,7 @@ use App\Http\Controllers\UserController;
           </div>
         </div>
         <!-- /.card-header -->
+        
         <a href ="{{route("form-saya")}}">Tambah data<a/>
         <div class="card-body table-responsive p-0">
           <table class="table table-hover text-nowrap">
